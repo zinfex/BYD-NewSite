@@ -1,0 +1,4 @@
+- Passar css para tailwind
+- criar seção de modelos https://www.byd.com/br/byd-por-assinatura
+
+(Uma coisa de cada vez, termina um vai pra <i class="fa fa-object-ungroup" aria-hidden="true"></i>)
