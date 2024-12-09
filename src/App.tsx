@@ -1,4 +1,5 @@
 
+import Contato from './components/Contato';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Modelos from './components/Modelos';
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Hero />
       <Modelos />
+      <Contato />
       <img src="./whatsapp.png" className='fixed cursor-pointer z-50 w-20 bottom-10 right-5'/>
     </>
   )

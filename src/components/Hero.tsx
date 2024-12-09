@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -33,10 +33,10 @@ export default function Hero() {
           />
           <div className="overlay">
             <h2 className='text-5xl text-white font-bold'>BYD SEAL</h2>
-            <div className="buttons ">
-              <button className="learn-more-btn">SAIBA MAIS</button>
-              <button className="learn-more-btn">TESTE DRIVE</button>
-              <button className="learn-more-btn">MONTE O SEU</button>
+            <div className="flex justify-center flex-col gap-5 md:gap-12 md:flex-row">
+              <button className="learn-more-btn px-6 py-3 border cursor-pointer font-semibold text-white hover:bg-white hover:text-black">SAIBA MAIS</button>
+              <button className="learn-more-btn px-6 py-3 border cursor-pointer font-semibold text-white hover:bg-white hover:text-black">TESTE DRIVE</button>
+              <button className="learn-more-btn px-6 py-3 border cursor-pointer font-semibold text-white hover:bg-white hover:text-black">MONTE O SEU</button>
             </div>
           </div>
         </div>
@@ -44,16 +44,16 @@ export default function Hero() {
       <SwiperSlide>
         <div className="slide-content">
           <img
-            src={isMobile ? '/dolphin2_mob.jpg' : '/dolphin_pc.jpg'}
+            src={isMobile ? '/big-MOB05.jpg' : '/PC-05big.jpg'}
             alt="Dolphin"
             className="slide-image brightness-75"
           />
           <div className="overlay">
-            <h2 className='text-5xl text-white font-bold'>BYD DOLPHIN PLUS</h2>
-            <div className="buttons ">
-              <button className="learn-more-btn">SAIBA MAIS</button>
-              <button className="learn-more-btn">TESTE DRIVE</button>
-              <button className="learn-more-btn">MONTE O SEU</button>
+            <h2 className='text-5xl text-white font-bold'>BYD YUAN PR</h2>
+            <div className="flex justify-center flex-col gap-5 md:gap-12 md:flex-row">
+              <button className="learn-more-btn px-6 py-3 border cursor-pointer font-semibold text-white hover:bg-white hover:text-black">SAIBA MAIS</button>
+              <button className="learn-more-btn px-6 py-3 border cursor-pointer font-semibold text-white hover:bg-white hover:text-black">TESTE DRIVE</button>
+              <button className="learn-more-btn px-6 py-3 border cursor-pointer font-semibold text-white hover:bg-white hover:text-black">MONTE O SEU</button>
             </div>
           </div>
         </div>
@@ -67,10 +67,10 @@ export default function Hero() {
           />
           <div className="overlay">
             <h2 className='text-5xl text-white font-bold'>BYD KING</h2>
-            <div className="buttons ">
-              <button className="learn-more-btn">SAIBA MAIS</button>
-              <button className="learn-more-btn">TESTE DRIVE</button>
-              <button className="learn-more-btn">MONTE O SEU</button>
+            <div className="flex justify-center flex-col gap-5 md:gap-12 md:flex-row">
+              <button className="learn-more-btn px-6 py-3 border cursor-pointer font-semibold text-white hover:bg-white hover:text-black">SAIBA MAIS</button>
+              <button className="learn-more-btn px-6 py-3 border cursor-pointer font-semibold text-white hover:bg-white hover:text-black">TESTE DRIVE</button>
+              <button className="learn-more-btn px-6 py-3 border cursor-pointer font-semibold text-white hover:bg-white hover:text-black">MONTE O SEU</button>
             </div>
           </div>
         </div>
