@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
+
 import '../index.css';
+import '../../node_modules/swiper/swiper.css'
+import '../../node_modules/swiper/modules/navigation.css'
+
 
 import { Navigation } from 'swiper/modules';
 
 export default function Hero() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  // Função para verificar o tamanho da tela
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
 
@@ -22,7 +23,7 @@ export default function Hero() {
       navigation={true}
       modules={[Navigation]}
       className="mySwiper"
-      slidesPerView={1} // Quantos slides aparecem por vez
+      slidesPerView={1} 
     >
       <SwiperSlide>
         <div className="slide-content">
