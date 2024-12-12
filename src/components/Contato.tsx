@@ -1,7 +1,7 @@
 export default function Contato() {
     return (
-      <div className="flex m-32 justify-center items-stretch">
-        <div className="p-12 bg-[#F7F7F7] flex flex-col gap-8 flex-1">
+      <div className="flex m-0 justify-center items-stretch md:m-32 flex-col md:flex-row">
+        <div className="p-12 bg-[#F7F7F7] flex flex-col gap-8 flex-1 ">
           <h1 className="text-5xl font-semibold">Contate a BYD</h1>
           <input type="text" placeholder="Nome*" className="p-2 text-lg" />
           <input type="text" placeholder="Sobrenome*" className="p-2 text-lg" />
@@ -20,8 +20,8 @@ export default function Contato() {
           </button>
         </div>
   
-        <div className="flex items-center flex-[0.7]">
-          <img src="./Contact-us.jpg" alt="Contact Us" className="contact-us object-cover h-full w-full md:h-[735px]" />
+        <div className="flex items-center flex-[0.7] ">
+          <img src="./Contact-us.jpg" alt="Contact Us" className="contact-us object-cover h-[350px] w-full md:h-[735px]" />
         </div>
       </div>
     );
