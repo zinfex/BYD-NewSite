@@ -11,12 +11,6 @@ type Advantage = {
   description: string;
 }
 
-type Model = {
-  title: string;
-  price: string;
-  image: string;
-}
-
 const advantages: Advantage[] = [
   { icon: './icons/docs.svg', description: 'Documentação' },
   { icon: './icons/checklist.svg', description: 'Manutenção preventiva' },
@@ -31,6 +25,12 @@ const advantages: Advantage[] = [
   { icon: './icons/pneu.svg', description: 'Gestão de pneus' },
   { icon: './icons/transporte.svg', description: 'Leva e Traz' },
 ]
+
+type Model = {
+  title: string;
+  price: string;
+  image: string;
+}
 
 const models: Model[] = [
   { title: 'BYD SHARK', price: 'R$ 9.320', image: './modelos/shark_byd_leasing.png' },

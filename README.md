@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# BYD NEW SITE 
+## Frontend Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a project built with React + Typescript + Tailwind + Vite
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
+In the latest version of the site, this is the Array used on the site to manage all car sales:
 ```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+  type Model = {
+    title: string;
+    price: string;
+    image: string;
+  }
+
+  const models: Model[] = [
+    { title: 'BYD SHARK', price: 'R$ 9.320', image: './modelos/shark_byd_leasing.png' },
+    { title: 'BYD SEAL', price: 'R$ 6.020', image: './modelos/seal-pc.png' },
+    { title: 'BYD KING', price: 'R$ 3.773', image: './modelos/king-fnal-mob.png' },
+    { title: 'BYD HAN', price: 'R$ 12.344', image: './modelos/han-pc.png' },
+    { title: 'BYD DOLPHIN PLUS', price: 'R$ 3.788', image: './modelos/dolphin-plus-pc.png' },
+    { title: 'BYD DOLPHIN', price: 'R$ 3.550', image: './modelos/dolphin-pc.png' },
+    { title: 'BYD DOLPHIN MINI', price: 'R$ 2.648', image: './modelos/dolphin-mini-pc.png' },
+    { title: 'BYD YUAN PRO', price: 'R$ 4.021', image: './modelos/yuan-pro-pc-2.png' },
+    { title: 'BYD YUAN PLUS', price: 'R$ 4.730', image: './modelos/yuan-plus-pc.png' },
+    { title: 'BYD YUAN PRO', price: 'R$ 4.021', image: './modelos/yuan-pro-pc-2.png' },
+    { title: 'BYD TAN', price: 'R$ 11.380', image: './modelos/tan-pc-2.png' },
+    { title: 'BYD SONG PRO', price: 'R$ 4.040', image: './modelos/song-pro-pc.png' },
+    { title: 'BYD SONG PLUS', price: 'R$ 5.000', image: './modelos/song-plus-pc.png' },
+  ]
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Website under construction...
