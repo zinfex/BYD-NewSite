@@ -21,6 +21,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { Link } from 'react-router-dom'
 
 const products = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
@@ -41,14 +42,14 @@ export default function Header() {
     <header className="bg-white w-full fixed top-0 z-50">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link to='/' className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img
               alt=""
               src="./logo.avif"
               className="h-8 w-auto"
             />
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -105,12 +106,11 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
 
-          <a href="#" className="text-sm/6 font-semibold text-gray-900 border-b-2 border-transparent hover:border-zinc-300">
-            Ofertas
-          </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900 border-b-2 border-transparent hover:border-zinc-300">
+          <Link to='/ofertas' className="text-sm/6 font-semibold text-gray-900 border-b-2 border-transparent hover:border-zinc-300">Ofertas</Link>
+          
+          <Link to="/test-drive" className="text-sm/6 font-semibold text-gray-900 border-b-2 border-transparent hover:border-zinc-300">
             Test Drive
-          </a>
+          </Link>
           <a href="#" className="text-sm/6 font-semibold text-gray-900 border-b-2 border-transparent hover:border-zinc-300">
             Tecnologia
           </a>
@@ -163,6 +163,7 @@ export default function Header() {
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
+                
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
@@ -194,6 +195,8 @@ export default function Header() {
           </div>
         </DialogPanel>
       </Dialog>
+
+      <img src="./whatsapp.png" className='fixed cursor-pointer z-50 w-20 bottom-10 right-5'/>
     </header>
   )
 }
